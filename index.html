@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackjack</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+    
+    <header class="titulo">
+        Blackjack
+    </header>
+
+    <div class="row mt-2">
+        <div class="col text-center">
+            <button style="margin: 2px;" id="btnEmpezar" class="btn btn-danger">Nuevo juego</button>
+            <button style="margin: 2px;" id="btnPedir" disabled class="btn btn-primary">Pedir carta</button>
+            <button style="margin: 2px;" id="btnDetener" disabled class="btn btn-primary">Plantarse</button>
+        </div>
+    </div>
+
+    <div class="tablero">
+        <div class="row container">
+            <div class="col">
+                <h1>Jugador - <small>0</small></h1>
+                <div id="jugador-cartas">
+    
+                </div>
+            </div>
+        </div>
+    
+        <div class="row container mt-2">
+            <div class="col">
+                <h1>Computadora - <small>0</small></h1>
+                <div id="computadora-cartas">
+    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modalFinJuego container-fluid modalHidden">
+        <div class="modal-contenedor">
+            <h4 id="modal-msg"></h4>
+            <button id="cerrar-modal" class="btn">Aceptar</button>
+        </div>
+    </div>
+
+
+    <script src="./js/juego-min.js"></script>
+</body>
+</html>
